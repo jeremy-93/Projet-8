@@ -1,0 +1,25 @@
+.Erreur404p {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.Erreur404p h1 {
+  @include verticalCenter;
+  font-size: 288px;
+  height: 400px;
+  color: $color-1;
+}
+.Erreur404p p {
+  @include verticalCenter;
+  color: $color-1;
+  font-size: 36px;
+  height: 100px;
+}
+.Erreur404p li {
+  @include verticalCenter;
+  color: $color-1;
+  font-size: 18px;
+  height: 200px;
+}

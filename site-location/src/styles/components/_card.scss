@@ -1,0 +1,48 @@
+.container {
+  margin-top: 30px;
+  padding-top: 40px;
+  background: #f6f6f6;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.card {
+  gap: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.titreLogement {
+  position: absolute;
+  z-index: 1;
+  width: 340px;
+  height: 100%;
+}
+.card h2 {
+  position: absolute;
+  z-index: 2;
+  text-align: start;
+  color: $white;
+  width: 340px;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.card img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  width: 340px;
+  height: 340px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}

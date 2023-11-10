@@ -1,0 +1,22 @@
+.Footer {
+  margin-top: 80px;
+  width: 100%;
+  height: 209px;
+  background-color: #000;
+}
+.boiteL {
+  height: 83%;
+  @include verticalCenter;
+}
+.logoFooter {
+  text-align: center;
+  width: 122px;
+  height: 40px;
+  background: url("../../assets/img/LOGOFooter.png");
+}
+.Footer p {
+  @include verticalCenter;
+  color: $white;
+  font-size: 24px;
+  font-weight: 51 !important;
+}

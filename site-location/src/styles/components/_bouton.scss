@@ -1,0 +1,67 @@
+.center {
+  margin-top: 40px;
+  width: 100%;
+  @include verticalCenter;
+}
+.bouton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+.titre {
+  width: 100%;
+}
+h3 {
+  color: $white;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24px;
+  font-weight: 500 !important;
+}
+p {
+  padding: 15px;
+}
+.cont {
+  background: #f6f6f6;
+  color: $color-1;
+  width: 100%;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.cont.expanded {
+  max-height: 130px; /* Ou la hauteur maximale que vous souhaitez */
+  transition: max-height 1s ease-in-out; /* Conserver la transition pour l'ouverture */
+}
+
+.cont.collapsed {
+  /* Réduire la hauteur lorsqu'il est réduit */
+  transition: max-height 1s ease; /* Accélérer la fermeture */
+}
+
+.fleche {
+  background: url("../../assets/img/fleche.png");
+  @include verticalCenter;
+  color: $white;
+  width: 32px;
+  height: 32px;
+  border: 1px solid $color-1;
+  transition: transform 0.6s ease; /* Ajoutez une transition pour l'animation */
+
+  &.expanded {
+    transform: rotate(
+      -180deg
+    ); /* Appliquez une rotation de 180 degrés pour la flèche vers le bas */
+  }
+}
+.boiteF {
+  background-color: $color-1;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border: 1px solid $color-1;
+  padding: 10px;
+  border-radius: 10px;
+}

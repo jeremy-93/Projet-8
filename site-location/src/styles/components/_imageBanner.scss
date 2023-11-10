@@ -1,0 +1,23 @@
+.imagebannerHome {
+  margin-top: 20px;
+  @include card;
+  background: url("../../assets/img/BannerImg.png");
+  position: relative;
+  z-index: 1;
+}
+.noir {
+  position: absolute;
+  z-index: 2;
+  @include card;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+}
+.titreBannière {
+  @include verticalCenter;
+  @include card;
+  position: absolute;
+  color: $white;
+  font-size: 48px;
+  font-weight: 100;
+  z-index: 3;
+}
